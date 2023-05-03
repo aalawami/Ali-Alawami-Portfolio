@@ -1,0 +1,59 @@
+/* contacts.css */
+
+/* Contact information container */
+.contact-info {
+    display: flex;
+    margin-top: 8vh;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+  }
+  
+  /* Contact item container */
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Contact item icon */
+  .contact-item-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Email icon */
+  .email-icon {
+    background-image: url(../img/gmail.png);
+  }
+  
+  /* LinkedIn icon */
+  .linkedin-icon {
+    background-image: url(../img/LinkedIn.png);
+  }
+  
+  /* Phone icon */
+  .phone-icon {
+    background-image: url(../img/phone.png);
+  }
+  
+  /* Contact item text */
+  .contact-item-text {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  
+  /* Contact item link */
+  .contact-item-link {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Contact item link hover effect */
+  .contact-item-link:hover {
+    color: var(--site-color-01-hover);
+  }
+  

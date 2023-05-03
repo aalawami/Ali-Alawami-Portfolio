@@ -1,0 +1,342 @@
+:root{
+    --site-color-01: #c13584;
+    --site-color-01-hover: #780e4a;
+
+    font-size: 62.5%;
+}
+
+
+body {
+    background-color: #1e1e1e;
+}
+
+body:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url(../img/LinkedIn.png) url(../img/gmail.png);
+}
+
+.wrapper-main {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.6rem;
+    line-height: 1.5;
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2.8rem;
+    line-height: 1.5;
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 2.6;
+    line-height: 1.5;
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.4rem;
+    line-height: 1.75;
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+}
+
+a {
+    font-size: 1.4rem;
+    line-height: 1.75;
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+    cursor: pointer;
+}
+
+.header-main {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.header-main-logo {
+    width: fit-content;
+    height: 100%;
+    
+    padding-left: 10px;
+    display: flex;
+}
+.header-main-logo img {
+    height: 60px;
+    align-self: center;
+}
+.header-main-nav {
+    width: fit-content;
+    height: 100%;
+    
+}
+
+.header-main-nav ul {
+    margin-left: 30px;
+    display: flex;
+}
+
+.header-main-nav ul li {
+    display: inline;
+    float: left;
+}
+
+.header-main-nav ul li a {
+    padding: 0 10px;
+    font-family: 'Roboto Mono', monospace;
+    line-height: 60px;
+    color: #000;
+    display: block;
+    height: 100%;
+}
+
+.header-main-nav ul li a:hover {
+    color: #c13584;
+}
+
+.header-main-sm {
+    width: fit-content;
+    height: 100%;
+   
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.header-main-sm-li {
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/LinkedInBlack.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-main-sm-li:hover {
+    background-image: url(../img/LinkedIn.png);
+}
+.header-main-sm-gm {
+    width: 30px;
+    height: 20px;
+    background-image: url(../img/gmailBlack.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-main-sm-gm:hover {
+    background-image: url(../img/gmail.png);
+    width: 30px;
+    height: 30px;
+}
+
+/* Footer */
+
+.footer-main {
+    width: 100%;
+    padding: 60px 0 100px;
+    background-color: #141414;
+
+}
+
+.footer-main-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-clients {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: none;
+}
+
+.footer-clients img {
+    width: 50%;
+    border-radius: 100px;
+}
+
+.footer-clients p {
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 20px 20px 0;
+}
+
+.footer-getInTouch {
+    padding: 10px 20px;
+    border: 2px solid white;
+    font-weight: 600;
+    margin: 40px 0 60px;
+    transition: all ease-in-out;
+}
+
+.footer-getInTouch:hover {
+    border: 2px solid var(--site-color-01-hover);
+}
+
+.footer-sitemap {
+    flex-basis: 100%;
+    display: flex;
+}
+
+.footer-sitemap a {
+    line-height: 30px;
+}
+
+.footer-sitemap a:hover {
+    opacity: 0.8;
+}
+
+.footer-sitemap ul:nth-child(1) {
+    border-left: 4px solid var(--site-color-01);
+    padding-left: 20px;
+}
+
+.footer-sitemap ul:nth-child(1), 
+.footer-sitemap ul:nth-child(2) {
+    flex-basis: 180px;
+}
+
+.footer-sitemap ul:nth-child(3) {
+    flex-basis: 340px;
+}
+
+.footer-sitemap p {
+    text-transform: uppercase;
+}
+
+.footer-sitemap ul:nth-child(4) {
+    flex-grow: 1;
+}
+
+.footer-sitemap ul:nth-child(4) p {
+    text-align: right;
+}
+
+@media screen {
+    
+}
+
+.burger-menu, .burger-menu-btn {
+    display: none;
+}
+
+/* mobile version */
+@media only screen and (max-width: 600px){
+    
+    .burger-menu-btn {
+        display: block;
+        margin-left: 10px;
+        width: 50px;
+        height: 50px;
+        background-image: url(../img/icon/burger-menu.png), url(../img/icon/close.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center, center left 50px;
+    }
+
+    .burger-menu {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        z-index: 900;
+        background-color: #111;
+    }
+
+    .burger-menu ul li {
+        flex-basis: 100%;
+        border-top: 2px solid #000;
+    }
+
+    .burger-menu ul li:last-child {
+        border-bottom: 2px solid #000;
+    }
+
+    .burger-menu ul li a {
+        display: block;
+        height: 100%;
+        font-size: 3rem;
+        padding: 30px 0;
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .burger-menu ul {
+        width: 100%;
+        height: calc(100vh - 60px);
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+    
+    .wrapper-main {
+        width: calc(100% - 40px);
+    }
+
+    .header-main-logo {
+        padding-left: 20px;
+    }
+    
+    .header-main-nav {
+        display: none;
+        
+    }
+
+    .header-main-sm {
+        padding-right: 20px;
+    }
+    
+    .footer-clients {
+        display: none;
+    }
+    
+    .footer-getInTouch {
+        margin: 0px 0 60px;
+    }
+    
+    .footer-sitemap {
+        flex-wrap: wrap;
+    }
+    
+    .footer-sitemap ul:nth-child(1) {
+        border-left: none;
+        padding-left: 0;
+    }
+    
+    .footer-sitemap ul:nth-child(1), 
+    .footer-sitemap ul:nth-child(2),
+    .footer-sitemap ul:nth-child(3) {
+        flex-basis: 100%;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    
+    .footer-sitemap p {
+        padding: 0 20px;
+    }
+    
+    .footer-sitemap ul:nth-child(4) p {
+        text-align: center;
+    }
+}
